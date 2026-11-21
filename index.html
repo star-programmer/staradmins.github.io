@@ -6,6 +6,7 @@
 <title>Star Admins | IT Consulting and Outsourced CTO in Texas</title>
 <meta name="description" content="Star Admins is a Texas IT consulting firm. Microsoft 365, networks, security, DNS and certificate management, and support, plus outsourced CTO services: planning, budgeting, and executive reporting.">
 <link rel="icon" type="image/svg+xml" href="star.svg">
+<link rel="canonical" href="https://www.staradmins.com/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira:wght@500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
@@ -53,6 +54,8 @@
   .site-nav { display: flex; gap: 1.5rem; }
   .site-nav a { color: var(--navy); text-decoration: none; font-weight: 600; }
   .site-nav a:hover { text-decoration: underline; text-underline-offset: .25em; }
+  .site-nav a, .brand span { white-space: nowrap; }
+  @media (max-width: 900px) { .site-nav a:not(.keep) { display: none; } }
 
   /* Hero */
   .hero { background: var(--sky); overflow: hidden; }
@@ -127,7 +130,6 @@
   .site-footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; }
 
   @media (max-width: 760px) {
-    .site-nav a:not(.keep) { display: none; }
     .hero .wrap { grid-template-columns: 1fr; }
     .hero-star { order: -1; justify-self: start; width: 9rem; margin: 0; }
     .service-list { grid-template-columns: 1fr; }
@@ -161,7 +163,7 @@
     <nav class="site-nav" aria-label="Main">
       <a href="#services">IT services</a>
       <a href="#cto">Outsourced CTO</a>
-      <a href="#process">How we work</a>
+      <a href="#process">Ways to work with us</a>
       <a class="keep" href="#contact">Contact</a>
     </nav>
   </div>
